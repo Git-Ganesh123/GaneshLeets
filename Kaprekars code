@@ -1,0 +1,31 @@
+import math
+
+#1024
+#4210 - 0124 = 4086
+#8640 - 0468 = 8172
+#8721 - 1278 = 7443
+#7443 - 3447 = 3996
+#9963 - 3699 = 6264
+#6642 - 2466 = 4176
+#7641 - 1476 = 6174
+#6174
+
+
+n = int(input("enter the 4 digit starting number "))
+
+while n != 6174:
+    num_str = str(n).rjust(4,'0')
+
+    digits = sorted(num_str)
+    small = "".join(digits)
+    big = small[::-1]
+
+    n = int(big) - int(small)
+    print(big, "-", small, "=", n)
+
+
+print(n)
+
+
+
+
