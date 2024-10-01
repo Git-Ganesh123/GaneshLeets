@@ -1,4 +1,4 @@
-
+#made this to learn binary search trees and the different methods in the node & tree classes
 class node:
     
     def __init__(self, value = None):
